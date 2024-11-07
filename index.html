@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- EmailJS -->
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "f_NN87Mdd0tIwXPoh",
+      });
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/Bond.jpg" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">MAI, FENGYUAN</h1>
+
+          <p class="title">LIS, 2024-2025 Sem 1</p>
+        </div>
+
+        <!-- change the navigation bar -->
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:maifengyuan@outlook.com" class="contact-link">23064314@siswa.um.edu.my</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+60 11-5455 2916</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Last updated</p>
+
+              <time datetime="1982-06-23">2024-11-05</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Universiti Malaya, 50603 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <img src="assets/images/xiaohongshu-icon.svg" alt="小红书" class="social-icon">
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Interview</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publication</button>
+          </li> -->
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Assignment</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Statement</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            My name is <strong style="font-weight: bold; color: hsl(45, 54%, 58%); white-space: nowrap;">FENGYUAN MAI</strong>,
+            a LIS student from UM, Malaysia. About this assignment 1,
+            I plan to collect some students' opinions on front-end technology training in the library field,
+            and display their answers in the "Interview" column. I will display the information of the interviewed students in the table below.
+            and also try to use the labels required by Assignment 1 and further enrich them on this basis.
+          </p>
+          
+          <table class="custom-table">
+            <tr>
+              <th>Name</th>
+              <th>Metric</th>
+              <th>Background</th>
+            </tr>
+            <tr>
+              <td>MA,YUAN</td>
+              <td>23100827</td>
+              <td>Previously worked in international foreign trade industry</td>
+            </tr>
+            <tr>
+              <td>LI, YI</td>
+              <td>22103917</td>
+              <td>Four years working experience in Internet industry, as Product manager</td>
+            </tr>
+            <tr>
+              <td>Jennifer</td>
+              <td>23106552</td>
+              <td>Previously worked in banking related field in Singapore</td>
+            </tr>
+            <tr>
+              <td>Ming Ling</td>
+              <td>23071747</td>
+              <td>Eight years working experience in college library, as librarian</td>
+            </tr>
+          </table>
+
+          <!-- <p>
+            In addition, for the topic of my project, I plan to share with you my past research direction: <strong style="font-weight: bold; color: hsl(45, 54%, 58%); white-space: nowrap;">Bibliometrics</strong>.
+            This is a interesting subject in the library field. It uses a lot of analytical tools and can help you quickly carry out quantitative research.
+            My purpose in doing this is to let more students get in touch with bibliometrics, and try to use this knowledge to help complete their studies~
+          </p> -->
+
+          <hr style="border: 0; height: 2px; background:linear-gradient(to right, hsl(45, 54%, 58%), #FFD700, #FFA500); margin: 20px 0;">
+          <p>
+            Thanks to Sadee's project, which provided me with some easy-to-use interactive components and third-party libraries,
+            making this work look more neat and elegant. Welcome to follow the project source code address &#128071;
+            <strong>
+              <a style="color: white; text-decoration: underline; font-style: italic; white-space: nowrap;" href="https://github.com/codewithsadee/vcard-personal-portfolio.git" target="_blank">
+                https://github.com/codewithsadee/vcard-personal-portfolio.git
+              </a>
+            </strong>
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <!-- <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section> -->
+
+
+        <!--
+          - testimonials
+        -->
+
+        <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Teammates</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Respondent</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <div class="image-container">
+                  <img src="./assets/images/respondent-5.jpg" alt="client logo">
+                  <div class="overlay-text">MA,YUAN</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <div class="image-container">
+                  <img src="./assets/images/respondent-2.jpg" alt="client logo">
+                  <div class="overlay-text">LI YI</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <div class="image-container">
+                  <img src="./assets/images/respondent-3.jpg" alt="client logo">
+                  <div class="overlay-text">Jennifer</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <div class="image-container">
+                  <img src="./assets/images/respondent-4.jpg" alt="client logo">
+                  <div class="overlay-text">MING,LING</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <div class="image-container">
+                  <img src="./assets/images/my-realavatar.png" alt="client logo">
+                  <div class="overlay-text">Waiting for you</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Interview
+      -->
+
+      <article class="resume" data-page="interview">
+
+        <header>
+          <h2 class="h2 article-title">Interview</h2>
+        </header>
+
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Q1: Are you quick at learning code?</h3>
+      
+          <ul class="testimonials-list has-scrollbar">
+       
+            <!-- Testimonial item 1 -->
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/respondent-5.jpg" alt="MA,YUAN" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MA,YUAN</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I have say I am pretty adaptable. While coding is new for me, I picked up various software and systems in my last job quickly, so I believe I can apply the same learning approach here.
+                  </p>
+                </div>
+              </div>
+            </li>
+      
+            <!-- Testimonial item 2 -->
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/respondent-2.jpg" alt="Emily Stone" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>LI,YI</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Yes, I believe so. My background as a product manager involved understanding technical concepts and working with developers, so I feel comfortable diving into HTML and CSS.
+                  </p>
+                </div>
+              </div>
+            </li>
+      
+            <!-- Repeat more testimonials items as needed -->
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/respondent-3.jpg" alt="Michael Green" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jennifer</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I think so. I’ve had to learn various financial software and adapt to new systems in banking, so I’m comfortable picking up technical skills.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/respondent-4.jpg" alt="Jessica" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MING,LING</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I wouldn’t say I’m very quick, but I’m patient and thorough. Working in a library taught me to be detail-oriented, so I’ll take the time needed to learn it properly.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+      
+        </section>
+
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Q2: How do you think learning HTML will help you in your future career?</h3>
+      
+          <ul class="testimonials-list has-scrollbar">
+      
+            <!-- Testimonial item 1 -->
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/respondent-5.jpg" alt="MA,YUAN" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MA,YUAN</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Understanding HTML will give me an edge in the LIS field, especially in web-based systems. It’ll also be helpful if I work on any projects related to online cataloging or digital collections.
+                  </p>
+                </div>
+              </div>
+            </li>
+      
+            <!-- Testimonial item 2 -->
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/respondent-2.jpg" alt="Emily Stone" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>LI,YI</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    HTML is essential for understanding front-end structure, and knowing it will make it easier to communicate with developers. I can also use it to improve my product management skills by understanding UI/UX better.
+                  </p>
+                </div>
+              </div>
+            </li>
+      
+            <!-- Repeat more testimonials items as needed -->
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/respondent-3.jpg" alt="Michael Green" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jennifer</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    It would give me more flexibility in the LIS field, especially if I want to work on projects involving online resources or data presentation.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/respondent-4.jpg" alt="Jessica" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MING,LING</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Learning HTML is key for working with digital libraries, especially if I’m involved in maintaining or updating online resources and catalogs.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+      
+        </section>
+
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Q3: What challenges do you expect to face in learning front-end development?</h3>
+      
+          <ul class="testimonials-list has-scrollbar">
+      
+            <!-- Testimonial item 1 -->
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/respondent-5.jpg" alt="MA,YUAN" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MA,YUAN</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    The logic behind coding might take some time to fully grasp, as it’s quite different from my previous work. Finding efficient ways to troubleshoot will also be a challenge.
+                  </p>
+                </div>
+              </div>
+            </li>
+      
+            <!-- Testimonial item 2 -->
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/respondent-2.jpg" alt="Emily Stone" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>LI,YI</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Balancing aesthetics with functionality. I may have ideas but translating them into code could be challenging. I also expect debugging to be tricky without much experience.
+                  </p>
+                </div>
+              </div>
+            </li>
+      
+            <!-- Repeat more testimonials items as needed -->
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/respondent-3.jpg" alt="Michael Green" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jennifer</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Remembering the syntax and figuring out how different parts of the code interact. I also expect some challenges in making the design look professional.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/respondent-4.jpg" alt="Jessica" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MING,LING</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    The biggest challenge will probably be understanding the coding structure and remembering how to style pages. I’m used to the structure of library systems, but this is different.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+      
+        </section>
+
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Q4: Is there any specific project or goal you have in mind that you want to accomplish with the skills from this course?</h3>
+      
+          <ul class="testimonials-list has-scrollbar">
+      
+            <!-- Testimonial item 1 -->
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/respondent-5.jpg" alt="MA,YUAN" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MA,YUAN</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot
+                    of experience and is very concerned about the needs of clients. Lorem ipsum dolor sit amet, ullamco
+                    consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </li>
+      
+            <!-- Testimonial item 2 -->
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/respondent-2.jpg" alt="Emily Stone" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>LI,YI</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Yes, I want to create a prototype or mock-up site that could serve as a demo for potential library-related apps or tools that I may help manage in the future.
+                  </p>
+                </div>
+              </div>
+            </li>
+      
+            <!-- Repeat more testimonials items as needed -->
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/respondent-3.jpg" alt="Michael Green" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jennifer</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I would like to develop a simple, user-friendly interface for an online library catalog or a small resource hub that could serve specific community needs.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/respondent-4.jpg" alt="Jessica" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MING,LING</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I’d love to build a small website or online resource guide for library patrons. It could be something interactive that highlights our library’s digital collections.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+      
+        </section>
+
+       
+        <!--
+          - interview modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="publication">
+
+        <header>
+          <h2 class="h2 article-title">publication</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG (Assignment)
+      -->
+
+      <article class="blog" data-page="assignment">
+
+        <header>
+          <h2 class="h2 article-title">Assignment</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list" data-blog-list>
+
+            <li class="blog-post-item" data-blog-item data-blog-id="1">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Updated</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Sep 05, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Individual Assignment 1</h3>
+
+                  <p class="blog-text">
+                    Create a simple HTML document about your chosen topic using the basic tags.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item" data-blog-item data-blog-id="2">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item" data-blog-item data-blog-id="3">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <!-- <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li> -->
+
+          </ul>
+
+        </section>
+
+        <!--
+          - Blog(assignment) modal
+        -->
+
+        <div class="modal-container" data-blogmodal-container>
+
+          <div class="overlay" data-blogoverlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-blogmodal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-blogmodal-title></h4>
+
+              <time datetime="2021-06-14" data-blogmodal-date></time>
+
+              <div style="color: white;" data-blogmodal-text></div>
+
+              <h5>Code:</h5>
+              <div class="model-code" data-blogmodal-code></div>
+              <h5>Preview:</h5>
+              <div data-blogmodal-preview style="padding: 10px; margin-top: 10px; background-color: #f9f9f9; border: 1px solid #ccc;"></div>
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section style="color:white; margin-bottom: 15px;">
+          <p>If you would like to join the discussion, please feel free to</p>
+          <ul class="custom-list">
+            <li>
+              fill out the form below to let me know what topic you would like to discuss.
+            </li>
+            <li>
+              Or join us every Tuesday at the location shown in the map below! Thanks for participating!
+            </li>
+          </ul>
+        </section>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.900703757477!2d101.6505114757265!3d3.1209597968545517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc497177f0ab59%3A0x3f8ca530a352004!2sFaculty%20of%20Arts%20and%20Social%20Sciences!5e0!3m2!1sen!2smy!4v1730912082881!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
